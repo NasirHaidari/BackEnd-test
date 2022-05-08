@@ -1,0 +1,3 @@
+https://www.flickr.com/services/api/misc.urls.html
+
+https://live.staticflickr.com/{server-id}/{id}_{secret}.jpg
