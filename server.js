@@ -1,6 +1,6 @@
 const express = require('express')
-const dotenv = require('dotenv')
 const cors = require('cors')
+const dotenv = require('dotenv')
 const axios = require('axios')
 
 //Load env vars
@@ -9,9 +9,9 @@ dotenv.config({ path: './config/config.env' })
 //Route files
 
 const app = express()
-app.use(cors())
 
-app.get('/api/v1/my-gallery', async (req, res) => {
+app.get('/api/v1/my-gallery', cors(), async (req, res) => {
+  console.info('GET /api/v1/my-gallery')
   const galleryIds = [
     '72157720409510023',
     '72157720607928857',
